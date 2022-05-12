@@ -22,7 +22,7 @@ class MyAdvertisedDeviceCallbacks : public BLEAdvertisedDeviceCallbacks
 
       Serial.print("Name: " + String(BeacoName));
       Serial.println("; RSSI: " + String(ble_rssi));
-      Serial.println("\n[D] Collected Mnufaturer data: " + String(FactoDT));
+      Serial.println("\n[D] Collected Mnufaturer data: " + FactoDT);
 
       if (ble_rssi > -85 && ble_rssi < -60)
       {
